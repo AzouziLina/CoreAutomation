@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="                                                                                                                                                                                Core Layer">
+    <Position X="0.5" Y="0.75" Height="0.35" Width="13.136" />
+  </Comment>
+  <Comment CommentText="                                                          Core Interfaces">
+    <Position X="7.457" Y="1.499" Height="0.35" Width="6.133" />
+  </Comment>
+  <Comment CommentText="                                                                              Core Helpers">
+    <Position X="0.5" Y="1.507" Height="0.35" Width="6.648" />
+  </Comment>
+  <Comment CommentText="                                                                            Core Base classes">
+    <Position X="0.5" Y="4.142" Height="0.35" Width="6.66" />
+  </Comment>
+  <Class Name="CoreAutomation.Reporting.ExtentReportHelper" Collapsed="true">
+    <Position X="5.25" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>kQEUAACAEAAAAQBCAAgCAAEABAQIEAAAIgAACEAAgAI=</HashCode>
+      <FileName>Reporting\ExtentReportHelper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CoreAutomation.Utilities.JsonHelper" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\JsonHelper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CoreAutomation.Page.BasePage" Collapsed="true">
+    <Position X="1.75" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAACAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Page\BasePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CoreAutomation.Logging.SerilogLoggerHelper" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAQAAAAAAAAAABAAAAAAAAAAAAEAACAA=</HashCode>
+      <FileName>Logging\SerilogLoggerHelper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CoreAutomation.Data.ExcelHelper" Collapsed="true">
+    <Position X="5.25" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAABAAAAAAAAAAAEA=</HashCode>
+      <FileName>Data\ExcelHelper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CoreAutomation.Test.BaseTest" Collapsed="true">
+    <Position X="4" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAABAAQAAAQAAAACAAAIAAAAAAEADAQ=</HashCode>
+      <FileName>Test\BaseTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CoreAutomation.Driver.HealeniumSelfHealingHelper" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Driver\HealeniumSelfHealingHelper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CoreAutomation.Driver.SeleniumBrowserHelper" Collapsed="true">
+    <Position X="2.75" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABCBAAAAAABABIKAABEgAAAAASCwAMAAIAKCACAAAQ=</HashCode>
+      <FileName>Driver\SeleniumBrowserHelper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="CoreAutomation.Interfce.IBrowserHelper" Collapsed="true">
+    <Position X="7.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABABAAAAAABABIKAABEgAAAAACAQAIAAIACAACAAAA=</HashCode>
+      <FileName>Interface\IBrowserHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CoreAutomation.Interfce.IHealeniumHelper" Collapsed="true">
+    <Position X="9.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Interface\IHealeniumHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CoreAutomation.Interfce.IJsonHelper" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IJsonHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CoreAutomation.Interfce.ILoggerHelper" Collapsed="true">
+    <Position X="9.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAEAACAA=</HashCode>
+      <FileName>Interface\ILoggerHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CoreAutomation.Interfce.IReportHelper" Collapsed="true">
+    <Position X="7.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQEUAACAAAAAAQBCAAgCAAEAAAQAEAAAIgAAAEAAgAA=</HashCode>
+      <FileName>Interface\IReportHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CoreAutomation.Interfce.IDataHelper" Collapsed="true">
+    <Position X="11.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IDataHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
