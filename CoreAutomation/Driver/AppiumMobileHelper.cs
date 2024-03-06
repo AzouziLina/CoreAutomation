@@ -41,11 +41,10 @@ namespace CoreAutomation.Driver
                     PlatformName = JsonHelper.GetStringValueFromJson("AppSettings", "PlatformName"),
                     DeviceName = JsonHelper.GetStringValueFromJson("AppSettings", "DeviceName"),
                     App = JsonHelper.GetStringValueFromJson("AppSettings", "App"),
-                    AutomationName = AutomationName.AndroidUIAutomator2,
+                    AutomationName = AutomationName.AndroidUIAutomator2,// to be updated for IOS also
                 };
                 MobileDriver = new AndroidDriver(serverUri, driverOptions, TimeSpan.FromSeconds(180));
                 WebDriverWait = new WebDriverWait(Driver, TimeSpan.FromSeconds(60));
-                //MobileDriver.StartActivity("com.ubuy", "com.app.mazade.ubuy.LoginFbGActivity");
             }
             catch (Exception ex)
             {

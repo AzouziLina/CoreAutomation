@@ -54,8 +54,15 @@ namespace CoreAutomation.Test
                     jsonHelper = new JsonHelper();
                 if (browserHelper == null)
                 {
-                    browserHelper = new SeleniumBrowserHelper(reportHelper, loggerHelper);
-                    reportHelper.Info("Web Application Base URL value is :" + jsonHelper.GetStringValueFromJson("AppSettings", "baseURL"));
+                    string context = jsonHelper.GetStringValueFromJson("AppSettings", "DriverContext");
+                    if (context == "Mobile")
+                        browserHelper = new AppiumMobileHelper(reportHelper, loggerHelper);
+                    else
+                    {
+                        browserHelper = new SeleniumBrowserHelper(reportHelper, loggerHelper);
+                        reportHelper.Info("Web Application Base URL value is :" + jsonHelper.GetStringValueFromJson("AppSettings", "baseURL"));
+                    }
+                    reportHelper.Info("Start launching " + context + " application");
                 }
                 //Start test Execution
                 browserHelper.Init();
