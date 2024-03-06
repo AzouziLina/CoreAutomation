@@ -81,11 +81,11 @@
       <FileName>Interface\IBrowserHelper.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="CoreAutomation.Interfce.IHealeniumHelper" Collapsed="true">
+  <Interface Name="CoreAutomation.Interfce.ISelfHealingHelper" Collapsed="true">
     <Position X="9.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
-      <FileName>Interface\IHealeniumHelper.cs</FileName>
+      <FileName>Interface\ISelfHealingHelper.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="CoreAutomation.Interfce.IJsonHelper" Collapsed="true">

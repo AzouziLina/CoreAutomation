@@ -5,7 +5,7 @@ using OpenQA.Selenium.Remote;
 
 namespace CoreAutomation.Driver
 {
-    public class HealeniumSelfHealingHelper : IHealeniumHelper
+    public class HealeniumSelfHealingHelper : ISelfHealingHelper
     {
         public HealeniumSelfHealingHelper()
         {
