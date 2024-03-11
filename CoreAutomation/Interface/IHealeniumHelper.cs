@@ -1,14 +1,11 @@
 ﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using OpenQA.Selenium.Appium.Android;
 
 namespace CoreAutomation.Interfce
 {
-    public interface IHealeniumHelper
+    public interface ISelfHealingHelper
     {
-        IWebDriver InitSelfHealingDriver(string HealeniumUri);
+        IWebDriver InitSelenoidSelfHealingDriver(string HealeniumUri);
+        AndroidDriver InitAppiumSelfHealingDriver(string HealeniumUri);
     }
 }

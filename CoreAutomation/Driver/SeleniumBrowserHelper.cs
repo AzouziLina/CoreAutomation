@@ -17,7 +17,7 @@ namespace CoreAutomation.Driver
         private readonly IReportHelper reportHelper;
         private readonly ILoggerHelper loggerHelper;
         private readonly IJsonHelper JsonHelper;
-        private readonly IHealeniumHelper SelfHealingHelper;
+        private readonly ISelfHealingHelper SelfHealingHelper;
 
         public SeleniumBrowserHelper(IReportHelper reporter, ILoggerHelper logger)
         {
@@ -39,7 +39,7 @@ namespace CoreAutomation.Driver
                 if(HandleSelfHealing)
                 {
                     string HealeniumUri = JsonHelper.GetStringValueFromJson("AppSettings", "healeniumUri");
-                    WebDriver = SelfHealingHelper.InitSelfHealingDriver(HealeniumUri);
+                    WebDriver = SelfHealingHelper.InitSelenoidSelfHealingDriver(HealeniumUri);
                 }
                 else
                     WebDriver  = new ChromeDriver();

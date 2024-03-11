@@ -10,7 +10,7 @@
     <Position X="0.5" Y="1.507" Height="0.35" Width="6.648" />
   </Comment>
   <Comment CommentText="                                                                            Core Base classes">
-    <Position X="0.5" Y="5" Height="0.35" Width="6.66" />
+    <Position X="0.5" Y="4" Height="0.35" Width="6.66" />
   </Comment>
   <Class Name="CoreAutomation.Reporting.ExtentReportHelper" Collapsed="true">
     <Position X="5.25" Y="3.25" Width="1.75" />
@@ -29,7 +29,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="CoreAutomation.Page.BasePage" Collapsed="true">
-    <Position X="1.75" Y="5.5" Width="1.75" />
+    <Position X="1.75" Y="4.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAACAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>Page\BasePage.cs</FileName>
@@ -52,7 +52,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="CoreAutomation.Test.BaseTest" Collapsed="true">
-    <Position X="4" Y="5.5" Width="1.75" />
+    <Position X="4" Y="4.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAAAAAAAABAAQAAAQAAAACAAAIAAAAAAEADAQ=</HashCode>
       <FileName>Test\BaseTest.cs</FileName>
@@ -61,7 +61,7 @@
   <Class Name="CoreAutomation.Driver.HealeniumSelfHealingHelper" Collapsed="true">
     <Position X="2.75" Y="3.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <HashCode>AAAAIAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Driver\HealeniumSelfHealingHelper.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -73,13 +73,6 @@
       <FileName>Driver\SeleniumBrowserHelper.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="CoreAutomation.Driver.AppiumMobileHelper" Collapsed="true">
-    <Position X="0.5" Y="4.25" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AABABAAAAgEBABIKAABEgAAAAASCwAIAAIACCACAAAQ=</HashCode>
-      <FileName>Driver\AppiumMobileHelper.cs</FileName>
-    </TypeIdentifier>
   </Class>
   <Interface Name="CoreAutomation.Interfce.IBrowserHelper" Collapsed="true">
     <Position X="7.75" Y="3.25" Width="1.5" />

@@ -19,12 +19,16 @@ namespace CoreAutomation.Driver
         private readonly ILoggerHelper loggerHelper;
         private readonly IJsonHelper JsonHelper;
         private WebDriverWait WebDriverWait;
+        private readonly ISelfHealingHelper SelfHealingHelper;
+
         public AppiumMobileHelper(IReportHelper reporter, ILoggerHelper logger)
         {
             reportHelper = reporter;
             loggerHelper = logger;
             if (JsonHelper == null)
                 JsonHelper = new JsonHelper();
+            if (SelfHealingHelper == null)
+                SelfHealingHelper = new HealeniumSelfHealingHelper();
         }
 
         private AndroidDriver Driver { get { return MobileDriver; } }
@@ -38,10 +42,10 @@ namespace CoreAutomation.Driver
                 var serverUri = new Uri(Environment.GetEnvironmentVariable("APPIUM_HOST") ?? AppiumUri);
                 var driverOptions = new AppiumOptions()
                 {
-                    PlatformName = JsonHelper.GetStringValueFromJson("AppSettings", "PlatformName"),
-                    DeviceName = JsonHelper.GetStringValueFromJson("AppSettings", "DeviceName"),
-                    App = JsonHelper.GetStringValueFromJson("AppSettings", "App"),
-                    AutomationName = AutomationName.AndroidUIAutomator2,// to be updated for IOS also
+                   PlatformName = JsonHelper.GetStringValueFromJson("AppSettings", "PlatformName"),
+                   DeviceName = JsonHelper.GetStringValueFromJson("AppSettings", "DeviceName"),
+                   App = JsonHelper.GetStringValueFromJson("AppSettings", "App"),
+                   AutomationName = AutomationName.AndroidUIAutomator2,// to be updated for IOS also
                 };
                 MobileDriver = new AndroidDriver(serverUri, driverOptions, TimeSpan.FromSeconds(180));
                 WebDriverWait = new WebDriverWait(Driver, TimeSpan.FromSeconds(60));
